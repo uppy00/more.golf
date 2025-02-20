@@ -100,3 +100,9 @@
 - ページネーション（gem’kaminari’）
 - 友人とのチャット機能（Action Cable）
 - ツイッターへの投稿機能（gem ‘meta-tags’）
+
+# 画面推移図
+https://www.figma.com/design/fIk0gyfc98KcXdriixBLXU/More-golf?node-id=6-261&t=lo4GMm9wzE8Dndh1-0
+
+# ER図系
+![more golf ERポリモーフィック関連付けを追加 drawio  drawio](https://github.com/user-attachments/assets/eb9a4407-d579-418f-a115-4f09781cf998)
