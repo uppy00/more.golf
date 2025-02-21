@@ -119,4 +119,3 @@
 https://www.figma.com/design/fIk0gyfc98KcXdriixBLXU/More-golf?node-id=6-261&t=lo4GMm9wzE8Dndh1-0
 
 # ER図系
-![more golf ERポリモーフィック関連付けを追加 drawio  drawio (2)](https://github.com/user-attachments/assets/502ab712-1b13-46f6-86e3-3520c01081be)
