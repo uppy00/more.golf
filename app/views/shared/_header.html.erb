@@ -1,12 +1,12 @@
-<header class="bg-gray-800 p-4">
+<header class="bg-green-500 p-4">
   <div class="container mx-auto flex justify-between items-center">
-    <h1 class="text-white text-2xl">My Website</h1>
-    <nav>
-      <ul class="flex space-x-4">
-        <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
-        <li><a href="#" class="text-gray-300 hover:text-white">About</a></li>
-        <li><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="text-white text-2xl">More Golf</div>
+    <!-- ゴルフ画像のイメージを追加　-->
+    <%= image_tag "", alt: "" %>
+      <div class="flex space-x-4">
+        <div><%= link_to '新規登録', '#', class: 'text-white hover:text-white' %></div>
+        <div><%= link_to 'ログイン', '#', class: 'text-white hover:text-white' %></div>
+        <div><%= link_to 'ゴルフ入門', '#', class: 'text-white hover:text-white' %></div>
+    </div>
   </div>
 </header>
