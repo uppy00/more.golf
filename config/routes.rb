@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
   resources :posts
   root "top_pages#top"
+  # ユーザ登録のルーティング
   resources :users, only: %i[new create]
+  # ユーザーログインのルーティング new(get)はログインフォームを表示するため(post)は送られてきたデーターを処理するため
+  get 'login', to: 'user_sessions#new'
+  post 'login', to: 'user_sessions#create'
 
 
 
