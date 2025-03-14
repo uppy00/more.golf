@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   resources :posts
   root "top_pages#top"
+  resources :users, only: %i[new create]
 
 
 

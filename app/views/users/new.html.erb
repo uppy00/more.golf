@@ -1,0 +1,31 @@
+<!-- ユーザー登録画面 -->
+<div>
+  <div>
+    <h1 class="text-2xl">ユーザー登録</h1>
+    <%= form_with model:@user do |f| %>
+      <div>
+        <%= f.label :first_name, "名字" %> 
+        <%= f.text_field :first_name %>
+      </div>
+      <div>
+        <%= f.label :last_name, "名前" %> 
+        <%= f.text_field :last_name %>
+      </div>
+      <div>
+        <%= f.label :email, "メールアドレス" %> 
+        <%= f.text_field :email %>
+      </div>
+      <div>
+        <%= f.label :password, "パスワード" %> 
+        <%= f.text_field :password %>
+      </div>
+      <div>
+        <%= f.label :password_confirmation, "パスワード確認" %> 
+        <%= f.text_field :password_confirmation %>
+      </div>
+      <div>
+        <%= f.submit "登録"%>
+      </div>
+    <% end %>
+  </div>
+</div>
