@@ -38,4 +38,4 @@ class PostsTest < ApplicationSystemTestCase
 
 #    assert_text "Post was successfully destroyed"
 #  end
-#end
+end
