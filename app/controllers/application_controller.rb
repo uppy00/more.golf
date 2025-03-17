@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   # ユーザーがログインしているかどうかを判断　してない場合not_authenticatedに指定したルートにリダイレクト
   before_action :require_login
 
+
   private
 
   def not_authenticated
