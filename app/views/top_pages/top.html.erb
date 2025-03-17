@@ -1,4 +1,17 @@
 <% content_for :title, "More.golf" %>
+<!-- フラッシュメッセージの表示-->
+<% if flash[:success] %>
+  <%= flash[:success] %></div>
+<% end %>
+
+<% if flash.now[:danger] %>
+  <%= flash.now[:danger] %></div>
+<% end %>
+
+<% if flash[:notice] %>
+  <%= flash[:notice] %></div>
+<% end %>
+
 <!-- トップページ　-->
 <div class="bg-blue-500 text-white p-4">
 	Tailwind CSSが適用されています！
