@@ -6,18 +6,18 @@ class UserSessionsController < ApplicationController
   # login sorceryのメソッド
   def create
     @user = login(params[:email], params[:password])
+
     if @user
-      flash[:success] = "ログインしました。"
+      flash[:notice] = "ログインに成功しました"
       redirect_to root_path
     else
-      flash.now[:danger] = "ログインに失敗しました。メールアドレスまたはパスワードが正しいか確認してください。"
+      flash.now[:alert] = "ログインに失敗しました。メールアドレスまたはパスワードが正しいか確認してください。"
       render :new
     end
   end
 
   def destroy
     logout
-    flash[:notice] = "ログアウトしました。"
-    redirect_to root_path, status: :see_other
+    redirect_to root_path, notice: "ログアウトしました。"
   end
 end
