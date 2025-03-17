@@ -7,11 +7,11 @@ class UserSessionsController < ApplicationController
   def create
     @user = login(params[:email], params[:password])
     if @user
-      flash[:success] = 'ログインしました。'
+      flash[:success] = "ログインしました。"
       redirect_to root_path
     else
       flash.now[:danger] = "ログインに失敗しました。メールアドレスまたはパスワードが正しいか確認してください。"
-      render :new, status: :unprocessable_entity
+      render :new
     end
   end
 
