@@ -17,14 +17,14 @@
       </div>
       <div class="mb-4">
         <%= f.label :password, "パスワード" %> 
-        <%= f.text_field :password, class: 'border  rounded-md' %>
+        <%= f.password_field :password, class: 'border  rounded-md' %>
       </div>
       <div class="mb-4">
         <%= f.label :password_confirmation, "パスワード確認" %> 
-        <%= f.text_field :password_confirmation, class: 'border  rounded-md' %>
+        <%= f.password_field :password_confirmation, class: 'border  rounded-md' %>
       </div>
       <div class="mb-4">
-        <%= f.submit "登録"%>
+        <%= f.submit "登録", class: 'hover:bg-green-500 transition-all duration-300'%>
       </div>
       <div class="mb-4">
         <%= link_to 'ログインページへ', login_path %>

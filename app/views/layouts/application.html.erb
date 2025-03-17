@@ -18,8 +18,20 @@
   </head>
   <!-- footerを一番したに表示させるためのもの-->
   <body class="flex flex-col min-h-screen">
-    <%= render 'shared/header' %>
+    <% if logged_in? %>
+      <%= render 'shared/header' %>
+    <% else %>
+      <%= render 'shared/before_login_header' %>
+    <% end %>
     <main class="flex-grow">
+    <!-- フラッシュメッセージの表示　仮-->
+      <% if flash[:notice] %>
+      <div class="notice"><%= flash[:notice] %></div>
+      <% end %>
+
+      <% if flash[:alert] %>
+        <div class="alert"><%= flash[:alert] %></div>
+      <% end %>
       <%= yield %>
     </main>
     <%= render 'shared/footer' %>
