@@ -6,7 +6,6 @@ class UserSessionsController < ApplicationController
   # login sorceryのメソッド
   def create
     @user = login(params[:email], params[:password])
-
     if @user
       flash[:notice] = "ログインに成功しました"
       redirect_to root_path
